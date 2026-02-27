@@ -9,7 +9,7 @@ A **Spring Boot** microservice for managing a corporate employee directory. Prov
 - 📋 **Contact Directory** — List and search employees (name, department, job title)
 - 🔍 **Full-text search** — Search across first name, last name, department, and job title
 - 🔐 **Keycloak Integration** — JWT-based OAuth2 authentication; `ADMIN` role required for write operations
-- 🙈 **Data Privacy** — Phone numbers are hidden from non-admin users automatically
+- 👁️ **Data Privacy** — Phone numbers are hidden from non-admin users automatically
 - 🗑️ **Soft Delete** — Deleted contacts are never truly removed from the database
 - 📄 **Pagination & Sorting** — All list endpoints are paginated
 - 📖 **Swagger / OpenAPI** — Interactive API docs at `/swagger-ui.html`

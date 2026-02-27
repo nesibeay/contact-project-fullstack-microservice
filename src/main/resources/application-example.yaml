@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: contact-service
+  contact:
+    email-domain: yourcompany.com   # Change to your company's email domain
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/directory_db
+    username: YOUR_DB_USERNAME      # Change this
+    password: YOUR_DB_PASSWORD      # Change this
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false                 # Set to true for debugging
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
+    api-docs:
+      path: /v3/api-docs
+
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8081/realms/YOUR_REALM_NAME  # Change realm name
